@@ -6,6 +6,12 @@ files:
   - name: test/ReadabilityTest.java
     visible: false
     learner_created: false
+  - name: src/readability/Text.java
+    visible: true
+    learner_created: true
 feedback_link: https://hyperskill.org/projects/39/stages/206/implement#comment
-status: Unchecked
-record: -1
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Fri, 13 Jun 2025 06:23:52 UTC"
+record: 2

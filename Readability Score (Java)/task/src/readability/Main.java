@@ -1,5 +1,6 @@
 package readability;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -9,6 +10,8 @@ public class Main {
         String text = scanner.nextLine();
 
         Text text1 = new Text(text);
-        text1.textDifficulty();
+        //text1.simpleTextDifficulty();
+        text1.mediumTextDifficulty();
+
     }
 }
