@@ -10,6 +10,9 @@ files:
   - name: src/readability/Text.java
     visible: true
     learner_created: true
-feedback_link: https://hyperskill.org/projects/39/stages/207/implement#comment
-status: Unchecked
+feedback_link: https://hyperskill.org/learn/step/5264#comment
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sat, 14 Jun 2025 14:00:29 UTC"
 record: 3

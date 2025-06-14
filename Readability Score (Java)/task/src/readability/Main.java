@@ -1,17 +1,30 @@
 package readability;
 
-import java.util.List;
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        File file = new File(args[0]);
 
-        Scanner scanner = new Scanner(System.in);
-        String text = scanner.nextLine();
+        try (Scanner scanner = new Scanner(file);){
+            System.out.println("The text is: ");
+            while (scanner.hasNext()){
+                String data = scanner.nextLine();
+                System.out.println(data);
+                Text text = new Text();
+                text.AutomatedReadabilityIndex(data);
+            }
 
-        Text text1 = new Text(text);
-        //text1.simpleTextDifficulty();
-        text1.mediumTextDifficulty();
+        }catch (FileNotFoundException ex){
+            System.out.println(ex.getMessage());
+        }
+
+//        Scanner scanner = new Scanner(System.in);
+//        String sentence = scanner.nextLine();
+//        Text text = new Text();
+//        text.AutomatedReadabilityIndex(sentence);
 
     }
 }
